@@ -70,7 +70,7 @@ body {
 
 .scrollable {
     overflow-y: auto;
-    max-height: 65vh; /* 64vh; height of bubble */
+    max-height: 55vh; /* 64vh; height of bubble */
     box-sizing: border-box;
 }
 
