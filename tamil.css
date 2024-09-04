@@ -58,10 +58,9 @@ body {
     text-align: center;
     border-radius: 50px;
     /* no border!!! instead i rounded the corners */
-    overflow: none; /* auto; */
+    overflow: hidden; /* auto; */
     scrollbar-width: none; 
     -ms-overflow-style: none; 
-    overflow-y: auto; 
     overflow-x: hidden;
     max-height: 65vh; 
     box-sizing: border-box;
@@ -185,6 +184,7 @@ p {
     align-items: center;
     transition: background-color 0.3s;
     text-align: left;
+    overflow: none;
 }
 
 #metabubble a {
@@ -247,7 +247,7 @@ p {
         text-align: left;
         border-radius: 50px;
         /* no border!!! instead i rounded the corners */
-        overflow: none; /* auto; */
+        overflow: hidden; /* auto; */
         scrollbar-width: none; 
         -ms-overflow-style: none; 
         max-height: 81vh; 
