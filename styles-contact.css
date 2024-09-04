@@ -51,7 +51,7 @@ body {
     this is for responsiveness! :) */
     width: 5%;
     min-width: 300px;
-    padding: 2% 2% 2% 2%;
+    padding: 10% 5% 10% 5%;
     /* tried to make it as centered as possible with badding and width */
     margin: 10px auto;
     background: rgba(178, 21, 0, 0.65);
@@ -65,9 +65,18 @@ body {
     -ms-overflow-style: none; 
     overflow-y: auto; 
     overflow-x: hidden;
-    max-height: 65vh; 
+    box-sizing: border-box;
 }
 
+.scrollable {
+    overflow-y: auto;
+    max-height: 65vh; /* 64vh; height of bubble */
+    box-sizing: border-box;
+}
+
+.scrollable::-webkit-scrollbar {
+    display: none; /* hides scrollbar */
+}
 .center::-webkit-scrollbar {
     display: none;
 }
