@@ -1,0 +1,320 @@
+html,
+body {
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+    background-color: rgb(82, 157, 176);
+}
+
+.imagebubble {
+    position: fixed;
+    width: 100%; 
+    height: 40vh; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    overflow: hidden;
+    border-bottom-left-radius: 75px;
+    border-bottom-right-radius: 75px;
+}
+
+.imagebubble img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: left center; /* LEFT CENTER MY LORD AND SAVIOR YEESSSSSS */
+}
+
+#center {
+    position: fixed;
+    width: fit-content; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* this makes the bubble go down to the bottom edge of the screen*/
+    min-width: 300px;
+    padding: 14% 7% 9% 7%;
+    /* padding used to be 8% */
+    background: rgba(10, 44, 72, 0.65);
+    /* this uses opacity of 65% for the container background color */
+    text-align: center;
+    box-sizing: border-box;
+    border-top-left-radius: 75px;
+    border-top-right-radius: 75px;
+    overflow: none; /* auto; */
+    scrollbar-width: none; /* for firefox */
+    -ms-overflow-style: none; /* for explorer & edge */
+}
+
+
+.scrollable {
+    overflow-y: auto;
+    max-height: 30vh; /* 64vh; height of bubble */
+    box-sizing: border-box;
+}
+
+.scrollable::-webkit-scrollbar {
+    display: none; /* hides scrollbar */
+}
+
+h1 {
+    font-family: "quiche-stencil", sans-serif;
+    font-weight: 500;
+    font-size: 1.8em;
+    color: #fff;
+    margin: 10px 0;
+    display: inline;
+}
+
+h2 {
+    font-family: "anaphora-stencil", sans-serif;
+    font-weight: 100;
+    font-size: 1.2em;
+    line-height: 1.4;
+    color: #fff;
+    margin: 10px 0;
+}
+
+p {
+    font-family: "stymie", serif;
+    font-weight: 300;
+    font-size: 1em;
+    color: #ffffffce;
+}
+
+.metablock {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+#fish {
+    font-size: 1.5em;
+}
+
+#releaseyear {
+    text-decoration: underline;
+    display: inline;
+}
+
+#originalname {
+    font-size: 1.2em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    display: inline;
+    justify-content: center;
+}
+
+#directed {
+    display: inline;
+}
+
+#overallrating {
+    display: inline;
+}
+
+#starring {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    text-wrap:wrap;
+}
+
+.nikidiary {
+    text-align: left;
+    margin-top: 15;
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+    justify-content: center; 
+    width: 100%; 
+    margin-left: 5%;
+}    
+
+#nikientry {
+    font-family: "stymie", serif;
+    font-weight: 300;
+    font-size: 1.2em;
+    color: #ffffffce;
+    line-height: 2em;
+    list-style: circle;
+}
+
+/* desktop view!!! my fav */
+@media (min-width: 1100px) {
+
+    #upcenter {
+       display: none;
+   }
+
+   html,
+    body {
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        background-image: url("images/sse-bg.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        overflow: hidden;
+        /* no scrolling; fixed image yay! */
+    }
+
+    #center {
+        position: fixed;
+        right: 5%; 
+        top: 10%; 
+        bottom: 10%; 
+        left: 50%;
+        width: 45%; 
+        /* padding used to be 30, 37.85 */
+        min-width: 300px;
+        padding: 4% 7% 9% 7%;
+        /* padding used to be 8% */
+        background: rgba(10, 44, 72, 0.65);
+        /* this uses opacity of 65% for the container background color */
+        text-align: center;
+        border-radius: 50px;
+        box-sizing: border-box; 
+        overflow: none; /* auto; */
+        scrollbar-width: none; 
+        -ms-overflow-style: none; 
+    }
+
+    #center::-webkit-scrollbar {
+        display: none; 
+    }
+
+    .scrollable {
+        overflow-y: auto; 
+        overflow-x: hidden;
+        max-height: 64vh; 
+        box-sizing: border-box;
+    }
+
+    .scrollable::-webkit-scrollbar {
+        display: none;
+    }
+
+    h1 {
+        /* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+        font-family: "quiche-stencil", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 2.7em;
+        margin: 0px auto 10px auto;
+        color: #fff;
+        /* i love quiche stencil it's so pretty */
+        display: inline;
+    }
+
+    h2 {
+        /* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+        font-family: "anaphora-stencil", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 1.3em;
+        line-height: 1.4;
+        color: #fff;
+        padding: 0px 0px;
+        margin: 0px auto 25px auto;
+        display: inline;
+        /* keeps the elements in one line */
+    }
+
+    p {
+        /* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+        font-family: "stymie", serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 0.9em;
+        color: #ffffffce;
+    }
+
+    #fish {
+        font-size: 2em;
+    }
+    
+    #releaseyear {
+        text-decoration: underline;
+    }
+
+    #originalname {
+        font-size: 1.3em;
+        margin-left: 0.25em;
+        margin-right: 0.25em;
+        /* adds white space between elements */
+    }
+    .metablock {
+        display: inline;
+        vertical-align: baseline;
+        font-size: 0.78em;
+        line-height: 3.5em;
+    }
+
+    #overallrating {
+        /* text-decoration: underline; */
+        margin-left: 0.25em;
+        margin-right: 0.25em;
+    }
+
+    #starring {
+        margin-left: 0em;
+        margin-right: 0em;
+        text-wrap:nowrap;
+    }
+  
+    .nikidiary {
+        margin-top: 0px;
+        display: block;
+        width: 100%;
+        margin-left: 2.75%;
+        align-items: flex-start; 
+        justify-content: flex-start;
+    }  
+
+    #nikientry {
+        font-family: "stymie", serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 1.2em;
+        color: #ffffffce;
+        line-height: 2em;
+        margin-top: 0%;
+        /* this makes the space between the header and the first bullet point go away */
+        list-style:circle;
+        /* this is the style of the bullet points */
+    }
+}
+
+/* tablet (medium) view */
+@media (min-width: 700px) and (max-width: 1100px) {
+    #upcenter, #center {
+        display: grid; 
+        /* not really sure how to use grid in this but i think it'll be more helpful when i do my landing page for the final project */
+        gap: 20px;
+    }
+
+    #center {
+        width: 100%;
+        height: 45vh;
+        padding: 0%;
+    }
+    
+    .imagebubble img {
+        width: 100%;
+        height: auto;
+    }
+
+    .scrollable {
+        padding: 20px;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+}

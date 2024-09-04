@@ -1,0 +1,362 @@
+@import url('https://fonts.cdnfonts.com/css/redaction');
+
+html,
+body,
+div,
+h1,
+h2,
+p,
+a,
+img,
+center,
+ul,
+li,
+nav {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    line-height: 1;
+}
+
+ul {
+    list-style: none;
+}
+
+/* heeyyy guys it's niki here B) */
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-image: url("images/cassette-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    overflow: hidden;
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+
+#metabubble {
+    /* this is for responsiveness! :) */
+    width: 5%;
+    min-width: 300px;
+    padding: 2% 2% 2% 2%;
+    margin: 10px auto;
+    background: rgba(178, 21, 0, 0.65);
+    /* background: rgba(63, 13, 13, 0.65); */
+    /* this uses opacity of 65% for the background color */
+    text-align: center;
+    border-radius: 50px;
+    /* no border!!! instead i rounded the corners */
+    overflow: none; /* auto; */
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+    overflow-y: auto; 
+    overflow-x: hidden;
+    max-height: 65vh; 
+    box-sizing: border-box;
+}
+
+/* .scrollable::-webkit-scrollbar {
+    display: none;
+} */
+
+#logo {
+    margin-bottom: 5px;
+    text-align: center;
+    /* obviously had to add my little niki watermark as my logo ;) */
+}
+
+h1 {
+    font-family: 'Redaction 35', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.5em;
+    margin: 0 auto 10px auto;
+    color: #fff;
+}
+
+h2 {
+    /* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+    font-family: 'Redaction 35', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 2em;
+    line-height: 1.5em;
+    margin: 0px;
+    color: #fff;
+    /* text-wrap: wrap; */
+}
+
+p {
+    /* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+    font-family: "anaphora-stencil", sans-serif;
+    font-weight: 280;
+    font-style: normal;
+    font-size: 1em;
+    color: #fff;
+    line-height: 1.4em;
+    /* text-wrap: wrap; */
+    margin-top: 5px;
+}
+
+#star {
+    display: inline;
+    font-size: 0.75em;
+}
+
+.leftlogo {
+    justify-self: start;
+    padding-left: 25px;
+    padding-top: 35px;
+    width: 100px; /* Adjust size as needed */
+}
+
+#toplogo {
+    width: 80px;
+}
+
+.topnav {
+    display: flex;
+    justify-content: flex-end; /* Align the entire navbar to the right */
+    padding: 0.5em; /* Adjust padding as needed */
+    position: relative;
+    margin-top: -1em; /* Move it higher if needed */
+}
+
+.topnav ul {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(2, auto);
+    gap: 0.5em; /* Space between the items */
+    padding: 0;
+    margin-top: -75px;
+    list-style: none;
+    justify-content: end; /* Align grid to the right */
+    width: auto;
+}
+
+.topnav li {
+    display: flex;
+    justify-content: flex-end; /* Align text to the right within each column */
+}
+
+.topnav a {
+    color: white;
+    text-decoration: none;
+    font-family: "anaphora-stencil", sans-serif;
+    font-weight: 280;
+    font-style: normal;
+    padding: 0.5em 1em;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    text-align: right; /* Align text to the right */
+}
+
+.title {
+    font-size: 2em;
+    line-height: 1.5em;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    gap: 0.35em;
+    margin-bottom: 0.5em;
+    /* background-color: rgba(255, 255, 255, 0.2); */
+}
+
+#metabubble {
+    background-color: rgba(178, 21, 0, 0.65);
+    border-radius: 15px;
+    margin: none;
+    width: 80%;
+    height: 30%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+    text-align: left;
+}
+
+#metabubble a {
+    font-family: 'Redaction 35', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 2.5em;
+    line-height: 1.5em;
+    margin: 0px;
+    color: #fff;
+    text-wrap: wrap;
+    text-decoration: none;
+}
+
+#metabubble a:hover {
+    color: #ddd;
+}
+
+#metabubble h1,
+#metabubble h2 {
+    text-align: left; /* Right align text within #metabubble */
+}
+
+/* Movie Metadata Styling */
+.release-year {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.native-title {
+    font-style: normal;
+    color: #fff;
+    margin-left: 5px;
+}
+
+.director-name {
+    color: #fff;
+    margin-left: 5px;
+}
+
+/* Hover effects */
+#metabubble:hover {
+    background-color: rgba(140, 21, 0, 0.85);
+}
+
+/* desktop view!!! my fav */
+@media (min-width: 1100px) {
+    
+    #metabubble {
+        /*width: 550px;
+        this is for responsiveness! :) */
+        width: 90%;
+        min-width: 300px;
+        padding: 4% 8% 5% 8%;
+        /* tried to make it as centered as possible with badding and width */
+        margin: 30.5px auto;
+        background: rgba(178, 21, 0, 0.65);
+        /* background: rgba(63, 13, 13, 0.65); */
+        /* this uses opacity of 65% for the background color */
+        text-align: left;
+        border-radius: 50px;
+        /* no border!!! instead i rounded the corners */
+        overflow: none; /* auto; */
+        scrollbar-width: none; 
+        -ms-overflow-style: none; 
+        max-height: 81vh; 
+    }
+
+    #logo {
+        margin-bottom: 5px;
+        text-align: center;
+        /* obviously had to add my little niki watermark as my logo ;) */
+    }
+    
+    hr {
+        margin-bottom: 1em;
+    }
+    
+    h1 {
+        font-family: 'Redaction 35', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 4em;
+        margin: 15px auto 10px auto;
+        color: #fff;
+    }
+    
+    h2 {
+        /* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+        font-family: 'Redaction 35', sans-serif;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 2.3em;
+        line-height: 1.5em;
+        margin: 0px;
+        color: #fff;
+    }
+
+    p {
+        /* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+        font-family: "anaphora-stencil", sans-serif;
+        font-weight: 280;
+        font-style: normal;
+        font-size: 1.1em;
+        color: #fff;
+        line-height: 1.4em;
+        text-wrap: wrap;
+        margin-top: 5px;
+    }
+
+    .title {
+        font-size: 3em;
+        line-height: 1.5em;
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+        gap: 0.35em;
+        margin-bottom: 0.5em;
+    }
+    
+    #desc {
+        line-height: 1.5em;
+        font-size: 0.95em;
+    }
+
+    .leftlogo {
+        justify-self: start;
+        padding-left: 30px;
+        padding-top: 20px;
+        width: 100px; /* Adjust size as needed */
+    }
+    
+    #toplogo {
+        width: 100px;
+    }
+    .topnav {
+        flex-wrap: nowrap; /* Prevent wrapping on larger screens */
+        padding: 0 3em;
+        justify-content: flex-end; /* Ensure the whole navbar aligns to the right */
+        margin-top: -80.5px;
+        margin-right: 4px;
+    }
+
+    .topnav ul {
+        display: flex;
+        flex-wrap: nowrap; /* Keep items in a single line */
+        justify-content: flex-end;
+        margin: 0;
+        padding: 0;
+        gap: 1em;
+        list-style: none;
+    }
+    
+    .topnav li {
+        display: flex;
+        align-items: center;
+    }
+    
+    .topnav a {
+        color: white;
+        text-decoration: none;
+        font-family: "anaphora-stencil", sans-serif;
+        font-weight: 280;
+        font-style: normal;
+        padding: 0.5em 1em;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+        display: inline-block; /* Ensure proper sizing */
+    }
+    
+    .topnav a:hover {
+        background-color: rgba(178, 21, 0, 0.65);
+        /* Optional: add padding or border if needed */
+    }
+}    
