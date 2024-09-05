@@ -70,15 +70,12 @@ body {
 
 .scrollable {
     overflow-y: auto;
-    max-height: 60vh; /* 64vh; height of bubble */
+    max-height: 55vh; /* 64vh; height of bubble */
     box-sizing: border-box;
 }
 
 .scrollable::-webkit-scrollbar {
     display: none; /* hides scrollbar */
-}
-.center::-webkit-scrollbar {
-    display: none;
 }
 
 #logo {
@@ -201,11 +198,20 @@ p {
         border-radius: 50px;
         /* no border!!! instead i rounded the corners */
         overflow: none; /* auto; */
+        overflow-x: hidden;
         scrollbar-width: none; 
         -ms-overflow-style: none; 
         box-sizing: border-box;  
-        overflow-x: hidden;
-        max-height: 81vh; 
+    }
+
+    .scrollable {
+        overflow-y: auto;
+        max-height: 65vh; /* 64vh; height of bubble */
+        box-sizing: border-box;
+    }
+
+    .scrollable::-webkit-scrollbar {
+        display: none; /* hides scrollbar */
     }
 
     #logo {
@@ -213,7 +219,6 @@ p {
         text-align: center;
         /* obviously had to add my little niki watermark as my logo ;) */
     }
-    
     
     hr {
         margin-bottom: 1em;
@@ -316,4 +321,86 @@ p {
         background-color: rgba(178, 21, 0, 0.65);
         /* Optional: add padding or border if needed */
     }
-}    
+}
+
+/* tablet (medium) view */
+@media (min-width: 700px) and (max-width: 1100px) {
+
+    .center {
+        /*width: 550px;
+        this is for responsiveness! :) */
+        width: 70%;
+        min-width: 300px;
+        padding: 4% 8% 5% 8%;
+        /* tried to make it as centered as possible with badding and width */
+        margin: 30.5px auto;
+        background: rgba(178, 21, 0, 0.65);
+        /* background: rgba(63, 13, 13, 0.65); */
+        /* this uses opacity of 65% for the background color */
+        text-align: center;
+        border-radius: 50px;
+        /* no border!!! instead i rounded the corners */
+        overflow: none; /* auto; */
+        overflow-x: hidden;
+        scrollbar-width: none; 
+        -ms-overflow-style: none; 
+        box-sizing: border-box;  
+    }
+
+    .scrollable {
+        overflow-y: auto;
+        max-height: 65vh; /* 64vh; height of bubble */
+        box-sizing: border-box;
+    }
+
+    .scrollable::-webkit-scrollbar {
+        display: none; /* hides scrollbar */
+    }
+
+    #logo {
+        margin-bottom: 5px;
+        text-align: center;
+        /* obviously had to add my little niki watermark as my logo ;) */
+    }
+    
+    hr {
+        margin-bottom: 1em;
+    }
+    
+    h1 {
+        font-family: 'Redaction 20', sans-serif;
+        font-weight: 400;
+        font-style: normal !important;
+        font-size: 3.8em;
+        margin: 0 auto 10px auto;
+        color: #fff;
+    }
+    
+    h2 {
+        /* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+        font-family: 'Redaction 35', sans-serif;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 2.2em;
+        line-height: 1.5em;
+        margin: 0px;
+        color: #fff;
+    }
+
+    p {
+        /* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+        font-family: "anaphora-stencil", sans-serif;
+        font-weight: 280;
+        font-style: normal;
+        font-size: 1.1em;
+        color: #fff;
+        line-height: 1.4em;
+        text-wrap: wrap;
+        margin-top: 5px;
+    }
+
+    #desc {
+        line-height: 1.5em;
+        font-size: 0.95em;
+    }
+}
