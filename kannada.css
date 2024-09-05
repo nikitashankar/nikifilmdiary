@@ -182,7 +182,7 @@ p {
     font-family: 'Redaction 35', sans-serif;
     font-weight: 400;
     font-style: italic;
-    font-size: 1.95em;
+    font-size: 1.9em;
     line-height: 1.5em;
     margin: 0px;
     color: #fff;
@@ -243,6 +243,18 @@ p {
         scrollbar-width: none; 
         -ms-overflow-style: none; 
         max-height: 81vh; 
+    }
+
+    #metabubble a {
+        font-family: 'Redaction 35', sans-serif;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 2.5em;
+        line-height: 1.5em;
+        margin: 0px;
+        color: #fff;
+        text-wrap: wrap;
+        text-decoration: none;
     }
 
     #logo {
