@@ -64,7 +64,7 @@ body {
     align-items: center;
     transition: background-color 0.3s;
     text-align: left;
-    overflow: none; /* auto; */
+    overflow: hidden; /* auto; */
     scrollbar-width: none; 
     -ms-overflow-style: none; 
     overflow-x: hidden;
@@ -182,7 +182,7 @@ p {
     font-family: 'Redaction 35', sans-serif;
     font-weight: 400;
     font-style: italic;
-    font-size: 2.5em;
+    font-size: 2.2em;
     line-height: 1.5em;
     margin: 0px;
     color: #fff;
