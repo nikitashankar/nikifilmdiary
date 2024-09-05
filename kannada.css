@@ -135,7 +135,7 @@ p {
     justify-self: start;
     padding-left: 25px;
     padding-top: 35px;
-    width: 100px; /* Adjust size as needed */
+    width: 100px; 
 }
 
 #toplogo {
@@ -144,26 +144,26 @@ p {
 
 .topnav {
     display: flex;
-    justify-content: flex-end; /* Align the entire navbar to the right */
-    padding: 0.5em; /* Adjust padding as needed */
+    justify-content: flex-end; /* aligns nav links to the right */
+    padding: 0.5em;
     position: relative;
-    margin-top: -1em; /* Move it higher if needed */
+    margin-top: -1em; /* didn't know you could use negative numbers??? lol */
 }
 
 .topnav ul {
-    display: grid; /* Use grid layout */
+    display: grid; /* i don't even know if i'm doing this correctly lol */
     grid-template-columns: repeat(2, auto);
-    gap: 0.5em; /* Space between the items */
+    gap: 0.5em;
     padding: 0;
     margin-top: -75px;
     list-style: none;
-    justify-content: end; /* Align grid to the right */
+    justify-content: end;
     width: auto;
 }
 
 .topnav li {
     display: flex;
-    justify-content: flex-end; /* Align text to the right within each column */
+    justify-content: flex-end; 
 }
 
 .topnav a {
@@ -175,7 +175,7 @@ p {
     padding: 0.5em 1em;
     border-radius: 8px;
     transition: background-color 0.3s ease;
-    text-align: right; /* Align text to the right */
+    text-align: right; 
 }
 
 #metabubble a {
@@ -196,15 +196,13 @@ p {
 
 #metabubble h1,
 #metabubble h2 {
-    text-align: left; /* Right align text within #metabubble */
+    text-align: left; 
 }
 
-/* Hover effects */
 #metabubble:hover {
     background-color: rgba(140, 21, 0, 0.85);
 }
 
-/* Movie Metadata Styling */
 .release-year {
     text-decoration: underline;
     color: #fff;
@@ -317,23 +315,23 @@ p {
         justify-self: start;
         padding-left: 30px;
         padding-top: 20px;
-        width: 100px; /* Adjust size as needed */
+        width: 100px; 
     }
     
     #toplogo {
         width: 100px;
     }
     .topnav {
-        flex-wrap: nowrap; /* Prevent wrapping on larger screens */
+        flex-wrap: nowrap;
         padding: 0 3em;
-        justify-content: flex-end; /* Ensure the whole navbar aligns to the right */
+        justify-content: flex-end;
         margin-top: -80.5px;
         margin-right: 4px;
     }
 
     .topnav ul {
         display: flex;
-        flex-wrap: nowrap; /* Keep items in a single line */
+        flex-wrap: nowrap;
         justify-content: flex-end;
         margin: 0;
         padding: 0;
@@ -355,12 +353,11 @@ p {
         padding: 0.5em 1em;
         border-radius: 8px;
         transition: background-color 0.3s ease;
-        display: inline-block; /* Ensure proper sizing */
+        display: inline-block; 
     }
     
     .topnav a:hover {
         background-color: rgba(178, 21, 0, 0.65);
-        /* Optional: add padding or border if needed */
     }
 }  
 
